@@ -2,9 +2,9 @@ using System;
 
 public class Write
 {
-    public list<question> _quetion = new List<question>();
+    public list<question> _question = new List<question>();
 
-    public string _userEntry;
+    public string _userEntry = " ";
 
     public void Display()
     {
