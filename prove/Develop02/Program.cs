@@ -1,24 +1,56 @@
 using System;
 
-class Program
-{
+partial class Program
+{   
     static void Main(string[] args)
     {
-        Write writeJurnal = new writeJurnal();
-        writeJurnal._question = "What was the best part of my day?";
-        writeJurnal._userEntry = " ";
+        String[] list;
+        Display display = new Display();
+        Menu menu = new Menu();
+        menu.numero1 = "1. Write";
+        menu.numero2 = "2. Display";
+        menu.numero3 = "3. Quit";
 
-        writeJurnal._userEntry.Add(_userEntry);
+        Console.WriteLine("{0}\n{1}\n{2}", 
+        menu.numero1, 
+        menu.numero2, 
+        menu.numero3);
 
-        Display dataJurnal = new dataJurnal();
-        dataJurnal._fileName = "";
+        string answer = "";
+        while (answer != "3")
+        {
+            Console.Write("Choose a number: ");
+            answer = Console.ReadLine();
 
-        Load getFile = new getFile();
-        getFile._enterFileName = "";
+            
+            if (answer == "1")
+            {
+                string entry="";
+                Console.WriteLine("Write");
+                Write write = new Write();
+                entry = write.displayQuestions();
+                list.Add(entry);
+            }
+            else if (answer == "2")
+            {
+                
+                Console.WriteLine("C");
+                
+                display.displayList(list);
+            }
+            else
+            {
+                Console.WriteLine("Enter a valid answer");
+            }
 
-        Save fileSave = new fileSave();
-        fileSave._inputFileName = "";
-        fileSave._userEntry = "";
+        }
 
+
+
+        
+
+    
+        
+        
     }
-}
+}    
