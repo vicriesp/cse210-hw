@@ -4,14 +4,15 @@ class Program
 {
     static void Main(string[] args)
     {   
-        string option = "4";
+        Console.Clear();
+        string option = "";
 
-        while (option == "4")
+        do
         {
             Console.WriteLine("Menu Options:");
             Console.WriteLine("     1. Start Breathing Activity.");
             Console.WriteLine("     2. Start Reflecting Activity.");
-            Console.WriteLine("     3. Start Listing Activity");
+            Console.WriteLine("     3. Start Listing Activity.");
             Console.WriteLine("     4. Quit.");
             Console.Write("Select a choise from the menu: ");
             option = Console.ReadLine();
@@ -33,7 +34,7 @@ class Program
                 bAct.timeToBreath();
             
             }
-            if (option == "2")
+            else if (option == "2")
             {
                 Console.Clear();
                 ReflectingActivity activity2 = new ReflectingActivity("Welcome to the reflecting Activity.", 
@@ -43,11 +44,13 @@ class Program
                 Console.WriteLine(" ");
                 Console.WriteLine(activity2.GetWelcomeMessage());
                 Console.WriteLine(" ");
+                Console.WriteLine(" ");
+                Console.WriteLine(" ");
                 Console.WriteLine(activity2.GetReflectingList());
                 Console.WriteLine(" ");
                 activity2.GetList();
             } 
-            if (option == "3")
+            else if (option == "3")
             {
                 Console.Clear();
                 ListingActivity activity3 = new ListingActivity("Welcome to the listing Activity.",
@@ -63,10 +66,11 @@ class Program
                 activity3.GetListResponses();
                 activity3.GetEnd();
             }
-            if (option == "4")
-            {
-                Console.WriteLine("Good by!!");
-            }   
         }
+        while (option != "4");
+
+        Console.Clear();
+        Console.WriteLine("Goodbye!!");
+        Console.WriteLine(" ");
     }
 }

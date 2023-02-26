@@ -19,16 +19,14 @@ public class ListingActivity : Activity
     public void GetSpinerAnimation()
     {
         Console.WriteLine(" ");
-        Console.WriteLine("How long, in seconds, would you like for your session? ");
-        var seconds = Convert.ToInt32(Console.ReadLine());
+        Console.Write("Press enter to start.");
+        Console.ReadLine();
     
         
         Console.Clear();
         Console.Write("Get ready.");
-
         
         Console.WriteLine(" ");
-        
         Console.Write(".");
         Thread.Sleep(1000);
         Console.Write("\b \b");
@@ -57,7 +55,7 @@ public class ListingActivity : Activity
     }
     public void GetListResponses()
     {
-        Console.WriteLine("List as many responses you cant to the following prompt:");
+        Console.WriteLine("List 5 responses to the following prompt:");
 
         string[] list = {
         "--Who are people that you appreciate?--", 
@@ -66,44 +64,38 @@ public class ListingActivity : Activity
         "--When have you felt the Holy Ghost this month?--", 
         "--Who are some of your personal heroes?--"};
         
+        Console.WriteLine(" ");
         var random = new Random();
         var randomIndex = random.Next(0, list.Length);
         Console.WriteLine(list[randomIndex]);
 
         Console.WriteLine(" ");
-        Console.Write("<< ");
+        Console.Write("< ");
         Console.ReadLine();
 
         Console.WriteLine(" ");
-        Console.Write("<< ");
+        Console.Write("< ");
         Console.ReadLine();
 
         Console.WriteLine(" ");
-        Console.Write("<< ");
+        Console.Write("< ");
         Console.ReadLine();
 
         Console.WriteLine(" ");
-        Console.Write("<< ");
+        Console.Write("< ");
         Console.ReadLine();
 
         Console.WriteLine(" ");
-        Console.Write("<< ");
+        Console.Write("< ");
         Console.ReadLine();
 
         Console.WriteLine(" ");
-        Console.Write("<< ");
-        Console.ReadLine();
-
-        Console.WriteLine(" ");
-        Console.Write("<< ");
-        Console.ReadLine();
+        Console.WriteLine("Thank you for the responses, you did it really good!");
     }
     public void GetEnd()
     {
-        //Console.Clear();
+        
         Console.WriteLine(" ");
-        //Console.WriteLine("Get ready!");
-
         Console.Write(".");
         Thread.Sleep(1000);
         Console.Write("\b \b");
@@ -128,13 +120,11 @@ public class ListingActivity : Activity
         Thread.Sleep(1000);
         Console.Write("\b \b");
         Console.WriteLine(" ");
+        Console.Clear();
 
         Console.WriteLine("You have completed another listing activity");
         
-        //Console.Clear();
         Console.WriteLine(" ");
-        //Console.WriteLine("Get ready!");
-
         Console.Write(".");
         Thread.Sleep(1000);
         Console.Write("\b \b");
@@ -157,7 +147,7 @@ public class ListingActivity : Activity
 
         Console.Write("  .");
         Thread.Sleep(1000);
-        //Console.Write("\b \b");
+        Console.Write("\b \b");
 
         Console.Clear();
     }

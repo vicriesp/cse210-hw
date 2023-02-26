@@ -18,10 +18,7 @@ public class ReflectingActivity : Activity
     }
     public void GetList()
     {
-    //Console.Clear();
-    //Console.WriteLine("Consider the following promt:");
     Console.WriteLine(" ");
-    
     string[] reflect = {
         "--Think of a time when you stood up for someone else.--",
         "--Think of a time when you did something really difficult--",
@@ -34,19 +31,18 @@ public class ReflectingActivity : Activity
     Console.WriteLine(reflect[randomReflect]);
     
     Console.WriteLine(" ");
-    Console.WriteLine("When you have something in mind, press enter to continue.");
+    Console.Write("When you have something in mind, press enter to continue.");
     Console.ReadLine();
 
     Console.WriteLine(" ");
-    Console.WriteLine("How long, in seconds, would you like for your session? ");
+    Console.Write("How long, in seconds, would you like for your session? ");
     var seconds = Convert.ToInt32(Console.ReadLine());
     
     int secondsBreath = (seconds * 1000) / 5;
         Console.Clear();
         
-        //Console.WriteLine("Get ready!");
+        Console.WriteLine(reflect[randomReflect]);
         Console.WriteLine(" ");
-
         Console.WriteLine("Why was this experience meaningful to you?");
         Thread.Sleep(secondsBreath);
         Console.WriteLine(" ");
@@ -69,43 +65,11 @@ public class ReflectingActivity : Activity
         Thread.Sleep(secondsBreath);
         Console.WriteLine(" ");
 
+        Console.Clear();
         Console.Write("\rTime has finished, you did really good!!.");
 
-        //Console.Clear();
-        Console.WriteLine(" ");
-        //Console.WriteLine("Get ready!");
-
-        Console.Write(".");
-        Thread.Sleep(1000);
-        Console.Write("\b \b");
-
-        Console.Write(" .");
-        Thread.Sleep(1000);
-        Console.Write("\b \b");
-
-        Console.Write("  .");
-        Thread.Sleep(1000);
-        Console.Write("\b \b");
-
-        Console.Write(".");
-        Thread.Sleep(1000);
-        Console.Write("\b \b");
-
-        Console.Write(" .");
-        Thread.Sleep(1000);
-        Console.Write("\b \b");
-
-        Console.Write("  .");
-        Thread.Sleep(1000);
-        Console.Write("\b \b");
-        Console.WriteLine(" ");
-
-        Console.WriteLine("You have completed another " + seconds + " seconds of the breathing activity");
         
-        //Console.Clear();
         Console.WriteLine(" ");
-        //Console.WriteLine("Get ready!");
-
         Console.Write(".");
         Thread.Sleep(1000);
         Console.Write("\b \b");
@@ -128,28 +92,38 @@ public class ReflectingActivity : Activity
 
         Console.Write("  .");
         Thread.Sleep(1000);
-        //Console.Write("\b \b");
+        Console.Write("\b \b");
+        Console.WriteLine(" ");
 
         Console.Clear();
-    
-    
-    
-    
-    
-    
-    // string[] list = {
-    //     "Why was this experience meaningful to you?", 
-    //     "Have you ever done anything like this before?", 
-    //     "How did you get started?", 
-    //     "How did you feel when it was complete?", 
-    //     "What made this time different than other times when you were not as successful?", 
-    //     "What is your favorite thing about this experience?", 
-    //     "What could you learn from this experience that applies to other situations?", 
-    //     "What did you learn about yourself through this experience?", 
-    //     "How can you keep this experience in mind in the future?"};
+        Console.WriteLine("You have completed another " + seconds + " seconds of the reflecting activity");
+        
+        
+        Console.WriteLine(" ");
+        Console.Write(".");
+        Thread.Sleep(1000);
+        Console.Write("\b \b");
 
-    // //var random = new Random();
-    // var randomIndex = random.Next(0, list.Length);
-    // Console.WriteLine(list[randomIndex]);
+        Console.Write(" .");
+        Thread.Sleep(1000);
+        Console.Write("\b \b");
+
+        Console.Write("  .");
+        Thread.Sleep(1000);
+        Console.Write("\b \b");
+
+        Console.Write(".");
+        Thread.Sleep(1000);
+        Console.Write("\b \b");
+
+        Console.Write(" .");
+        Thread.Sleep(1000);
+        Console.Write("\b \b");
+
+        Console.Write("  .");
+        Thread.Sleep(1000);
+        Console.Write("\b \b");
+
+        Console.Clear();
     }
 }
