@@ -8,7 +8,7 @@ class Program
         Goals goal = new Goals();
         ListGoals listgoal = new ListGoals();
         
-        //string option = " ";
+        
         while (statement == true)
         {
             Console.Clear();
@@ -46,9 +46,7 @@ class Program
                     SimpleGoal simpleGoal = new SimpleGoal(goalName, goalDescription);
                     listgoal._goals.Add(simpleGoal);
 
-                    // SimpleGoal sGoal = new SimpleGoal(" ");
-
-                    // sGoal.recordGoal();
+                    
                 }
                 else if (gOption == "2")
                 {
@@ -62,9 +60,7 @@ class Program
                     EternalGoal eternalGoal = new EternalGoal(goalName, goalDescription);
                     listgoal._goals.Add(eternalGoal);
                     
-                    // EternalGoal eGoal = new EternalGoal(" ");
-
-                    // eGoal.recordGoal();
+                    
                 }
                 else if (gOption == "3")
                 {
@@ -84,9 +80,7 @@ class Program
                     EternalGoal eternalGoal = new EternalGoal(goalName, goalDescription);
                     listgoal._goals.Add(eternalGoal);
                     
-                    // ChecklistGoals chGoal = new ChecklistGoals(" ");
-
-                    // chGoal.recordGoal();
+                    
                 }
             }
             else if (choise == "2")
