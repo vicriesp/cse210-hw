@@ -11,9 +11,8 @@ public class Video
     public void Display()
     {
         Console.WriteLine(" ");
-        
         Console.WriteLine($"Title: {_title} \nAuthor: {_author} \nLength: {_length}sec");
-        Console.WriteLine($"Commenter's Name: {_name}");
+        Console.WriteLine($"Commentor Name: {_name}");
         Console.WriteLine($"Comments: \n1.{_comment1} \n2.{_comment2} \n3.{_comment3}");
         Console.WriteLine(" ");
     }

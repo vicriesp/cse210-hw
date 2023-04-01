@@ -5,8 +5,7 @@ public class Product
     private string _productId1;
     private string _productId2;
     private double _price;
-    // private int _quantity1;
-    // private int _quantity2;
+    
 
     public string GetProduct1()
     {
@@ -48,34 +47,13 @@ public class Product
     {
         _price = price;
     }
-    // public int GetQuantity1()
-    // {
-    //     return _quantity1;
-    // }
-    // public void SetQuantity1(int quantity1)
-    // {
-    //     _quantity1 = quantity1;
-    // }
-    // public int GetQuantity2()
-    // {
-    //     return _quantity2;
-    // }
-    // public void SetQuantity2(int quantity2)
-    // {
-    //     _quantity2 = quantity2;
-    // }
+    
     public void GetPackingLabel()
     {
-    //Console.Clear();
     Console.Write(" ");
     Console.Write(" ");
     Console.WriteLine(" Packaging Label:");
     Console.WriteLine($"Product: {_product1} ID: {_productId1} \nProduct: {_product2} ID: {_productId2}");
     Console.WriteLine(" ");
     }
-    // public double GetSubTotal()
-    // {
-    //     // double total = (_price1 + _price2) * (_quantity1 + _quantity2);
-    //     // return total;
-    // }
 }

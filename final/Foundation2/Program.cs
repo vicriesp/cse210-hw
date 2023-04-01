@@ -6,7 +6,7 @@ class Program
     {
 
         Product product1 = new Product();
-        product1.SetProduct1("Avocato");
+        product1.SetProduct1("Avocado");
         product1.SetProduct2("Carrot");
         product1.SetProductId1("QW01");
         product1.SetProductId2("QW09");
@@ -18,6 +18,15 @@ class Program
         customer1.SetName("Juan W.");
         Console.WriteLine(" Shipping Label:");
         Console.WriteLine(customer1.GetName());
+        
+        Address address1 = new Address();
+        address1.SetStreetAddress("Av. Montes");
+        address1.SetCity("Provo");
+        address1.SetState("Utah");
+        address1.SetCountry("USA");
+
+        address1.GetAddress();
+        Console.WriteLine(" ");
 
         Order order1 = new Order();
         order1.SetCustomer("Juan W.");
@@ -27,16 +36,6 @@ class Program
         order1.SetQuantity2(2);
 
         order1.GetPrice();
-        
-        Address address1 = new Address();
-        address1.SetStreetAddress("Av. Montes");
-        address1.SetCity("Provo");
-        address1.SetState("Utah");
-        address1.SetCountry("USA");
-
-        address1.GetAddress();
-        address1.GetShippingCost();
-        Console.WriteLine(" ");
         Console.WriteLine("******************************");
 
         Product product2 = new Product();
@@ -51,15 +50,6 @@ class Program
         customer2.SetName("Abelt A.");
         Console.WriteLine(" Shipping Label:");
         Console.WriteLine(customer2.GetName());
-
-        Order order2 = new Order();
-        order2.SetCustomer("Albert A.");
-        order2.SetPrice1(4);
-        order2.SetPrice2(2);
-        order2.SetQuantity1(5);
-        order2.SetQuantity2(10);
-
-        order2.GetPrice();
         
         Address address2 = new Address();
         address2.SetStreetAddress("Pacific Road #12");
@@ -68,8 +58,15 @@ class Program
         address2.SetCountry("Canada");
 
         address2.GetAddress();
-        address2.GetShippingCost();
         Console.WriteLine(" ");
+
+        Order order2 = new Order();
+        order2.SetPrice1(4);
+        order2.SetPrice2(2);
+        order2.SetQuantity1(5);
+        order2.SetQuantity2(10);
+
+        order2.GetPrice();
         Console.WriteLine("******************************");
 
     }

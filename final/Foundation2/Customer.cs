@@ -26,16 +26,4 @@ public class Customer
         Console.WriteLine($"Name: {_name} \nAddress: {_address}");
         Console.WriteLine(" ");
     }
-
-    // public void GetNationality()
-    // {
-    //     if (_address = "USA")
-    //     {
-    //         int _country = 5;
-    //     }
-    //     else if (_address != "USA")
-    //     {
-    //         int ._country = 35;
-    //     }
-    // }
 }

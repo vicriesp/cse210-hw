@@ -9,13 +9,8 @@ public class Comment
 
     public void Display()
     {
-        //Console.WriteLine($"Name: {_name}");
-        //Console.WriteLine($"Comments: {_text}");
-
         foreach (Video video in _videos)
         {
-            //Console.Clear();
-            //Console.WriteLine($"Name: {_name1}");
             video.Display();
         }
     }

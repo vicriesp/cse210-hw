@@ -3,7 +3,7 @@ public class Address
     private string _streetAddress;
     private string _city;
     private string _state;
-    private string _country;
+    public string _country;
 
     public string GetStreetAddress()
     {
@@ -40,21 +40,5 @@ public class Address
     public void GetAddress()
     {
         Console.WriteLine($"{_streetAddress}, {_city}, {_state}, {_country}.");
-    }
-    public void GetShippingCost()
-    {
-        Order total = new Order();
-        double tTotal = total.GetPrice();
-
-      if (_country == "USA")
-      {
-        double five = tTotal + 5;
-        Console.WriteLine($"Total: {five}");
-      }
-      else if (_country != "USA")
-      {
-        double tF = tTotal + 35;
-        Console.WriteLine($"Total: {tF}");
-      }
     }
 }

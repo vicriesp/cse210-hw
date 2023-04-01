@@ -64,10 +64,21 @@ public class Order
     {
         _quantity2 = quantity2;
     }
-    public double GetPrice()
+    public void GetPrice()
     {
+        Address n = new Address();
+        
         double sTotal = (_price1 * _quantity1) + (_price2 * _quantity2);
-        Console.WriteLine($"SubTotal: {sTotal}");
-        return sTotal;
+
+        if (n._country == "USA")
+        {
+            double five = sTotal + 5;
+            Console.WriteLine($"Total: {five}");
+        }
+        else if (n._country != "USA")
+        {
+            double tF = sTotal + 35;
+            Console.WriteLine($"Total: {tF}");
+        }
     }
 }
